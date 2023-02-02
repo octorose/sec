@@ -1,0 +1,48 @@
+# ********************************introduction to Defensive Security************************************
+# ******************************************************************************************************
+
+# Security Operations Center (SOC):
+# it's a team that monitor network and system for security threats and respond to them.
+# SOC is a centralized location where security professionals monitor and analyze security events.
+# the main areas of SOC are:
+# 1-Vulnerability .
+# 2-Policy violations.
+# 3-Unauthorized access.
+# 4-Network intrusion.
+
+# Threat intelligence:
+# it's a process of collecting, analyzing, and using information about an adversary's tactics, techniques,
+#  and procedures (TTPs).
+# the informations or the data collection is done from local and external sources:
+# 1-network logs.
+# 2-public sources as forums.
+
+# Processing the data is done by aranging it in a format suitable for analysis.
+# the analysis aims to creat a list of recommendations and actions to be taken to prevent the threat.
+
+# Digital forensics and incident response (DFIR):
+# ----------------------------------------------------
+# Digital forensics:
+# it's the application of investigation crimes and establish facts.
+#  they focus on different areas:
+# 1-File System: analyzing a digital forensic image.this one reveals the files and folders that were
+#  created, deleted, or modified.
+# 2-System memory: it's the volatile memory of the system.sometime attackers dont store their data in
+#  the file system, they store it in the memory.
+# 3-SysLog:each client server  device has a log file that records the events that occur on
+#  the device. the attacker will leave a traceeven if the attacker tries to clear theire traces.
+# 4-Network logs:logs of the network packets that are sent and received by the network devices.
+
+# Incident response:
+# an incident is an event that has a negative impact on the organization. it can be a security breach,
+#  a virus, or a denial of service attack. and it can be something less serious like a misconfiguration
+# or an instrusion attempt, or a poicy violation.
+#  there is 4 major phases to respond to an incident:
+# 1-Preparation: it's the phase where the organization prepares for an incident.
+# 2-Detection: it's the phase where the organization detects an incident.
+# 3-Containment: it's the phase where the organization contains the incident.
+# 4-Post-incident activity: it's the phase where the organization analyzes the incident and producting a report.
+
+
+
+
