@@ -1,42 +1,47 @@
 # ***********************************************introduction to Network security********************************************
 # ***************************************************************************************************************************
-#
-#           
-#           -Definition:
-#
-#       a network is a group of computers and devicesconnected to each others and the security of networks 
-#       means protecting those devices and computers from attackers and also protecting it from a misuse from the 
-#       employees.
-#       the network security consists of different hardware and software solutions 
-#
-#           -Example of Hardware solutions:
-#
-#       Firewall appliance: the firewall give permission and block to sockets internaly or externaly basing on
-#       predefined set of rules.
-#       Inrusion Detection System(IDS): an IDS detects attackers ettempts to get into the network or into the System.
-#       Virtual Private Network(VPN): this appliance provide the secrecy and confidentiality of the data whiche means 
-#       it cannot be read nor altered by a third party.
-#
-#
-#           -Example of Software solutions:
-#
-#       Antivirus software: they are able to detect malwares to block them from executing
-#       Host firewall:yes there is a software version of the firewall its a host program that you install in your System
-#       as an Example Windows Defender Firewall 
-#
-#
-#           -Methodology:
-#       
-#       for every Inrusion ettempts it requires some planning or as we call a Chyber kill chainm it contain seven steps:
+#                                                                                                                            ##
+#                                                                                                                            ##
+#           -Definition:                                                                                                     ##  
+#                                                                                                                            ##
+#       a network is a group of computers and devicesconnected to each others and the security of networks                   ##
+#       means protecting those devices and computers from attackers and also protecting it from a misuse from the            ##
+#       employees.                                                                                                           ##
+#       the network security consists of different hardware and software solutions                                           ##
+#                                                                                                                            ##
+#           -Example of Hardware solutions:                                                                                  ##
+#                                                                                                                            ##  
+#       Firewall appliance: the firewall give permission and block to sockets internaly or externaly basing on               ##
+#       predefined set of rules.                                                                                             ##
+#       Inrusion Detection System(IDS): an IDS detects attackers ettempts to get into the network or into the System.        ##
+#       Virtual Private Network(VPN): this appliance provide the secrecy and confidentiality of the data whiche means        ##
+#       it cannot be read nor altered by a third party.                                                                      ##
+#                                                                                                                            ##       
+#                                                                                                                            ##                   
+#           -Example of Software solutions:                                                                                  ##
+#                                                                                                                            ##  
+#       Antivirus software: they are able to detect malwares to block them from executing                                    ##
+#       Host firewall:yes there is a software version of the firewall its a host program that you install in your System     ##
+#       as an Example Windows Defender Firewall                                                                              ##
+#                                                                                                                            ##
+#                                                                                                                            ##
+#           -Methodology:                                                                                                    ##
+#                                                                                                                            ##   
+#       for every Inrusion ettempts it requires some planning or as we call a Chyber kill chainm it contain seven steps:     ##
 #       -Recon: this refers to the step where the attacker have to collect data and learn as much as possible about the target
-#           informations as types of servers, operating system, ip adresses, name of users.
-#       -Weaponization: this means preparing the file with the chain of attacks or with a malicious componenet as an example 
-#           providing the attacker with remote access
-#       -Delivery: this means how the weaponized file can reach the target via any feasible method.
-#       -Exploitation: Execution of the malicious file.
+#           informations as types of servers, operating system, ip adresses, name of users.                                  ##
+#       -Weaponization: this means preparing the file with the chain of attacks or with a malicious componenet as an example ##
+#           providing the attacker with remote access                                                                        ##
+#       -Delivery: this means how the weaponized file can reach the target via any feasible method.                          ##
+#       -Exploitation: Execution of the malicious file.                                                                      ##
 #       -Installation: the execution of the file should install the malware on the target system this means if we have used the 
-#           usb as a deleveriy method it must be installed in the targrt system.
+#           usb as a deleveriy method it must be installed in the targrt system.                                             ##
 #       -C2(commande and control): the successful installation  give to the attacker an ability to command and controle the whole
-#           system.
-#       -Actions and objectifs: if the attacker has the control over the target's system, he has achieved their objectives
-#               Data Exfiltration(stealing target's data).
+#           system.                                                                                                          ##
+#       -Actions and objectifs: if the attacker has the control over the target's system, he has achieved their objectives   ##
+#               Data Exfiltration(stealing target's data).                                                                   ##
+#                                                                                                                            ##
+#                                                                                                                            ##  
+#                                                                                                                            ##
+## ***********************************************introduction to Network security********************************************
+# ****************************************************************************************************************************
