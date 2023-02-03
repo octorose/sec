@@ -1,0 +1,34 @@
+# ***********************************************introduction to digital forensics*******************************************
+# ***************************************************************************************************************************
+#                                                                                                                            ##
+#                                                                                                                            ##
+#       -Introduction:
+#
+#       it's the application of the sciendce to investigate crimes using digital evidences in any kind of devices found in 
+#       crime scene.
+#      
+#       -Digital forensics is used in two types:
+#       Public-sector investigation: means an investigation carried by the gouvernement.
+#       Private-sector investigation: refers to the investigations carried out by a coporate bodies by assigning a private 
+#           investigator
+#
+#
+#       -The Process of Digital Forensics:
+#            finding yourself in a crime or policy violation scene what should you do as a forensics investigator?
+#            simple the plan goes as follow:
+#                   -Acquire the evidence: this means that you need to collect devices such as laptop, phone, sd cards ... 
+#                       "note that the devices specially laptops if they are turned on require special handling"
+#                    -Establish a chain of custody: filling out the form(you can find it in this repo), only to make sure 
+#                       authorized investigators had access to the evidence.
+#                    -Placing the evidence in a secure container: making sure that the devices do not get access to networks 
+#                        so they dont get wiped remotly.
+#                    -Transport the device to the forensics lab.
+#        -Inside the lab the process goes as follow:
+#            *Retrieving the data from the secure container.
+#            *Extracting data by creating a forensics image using an advanced software to avoid modifying original data.
+#            *Return the devices to the secure container, You have to work on the copy so you dont damage the original one.
+#
+#       //Every file contain it meta data as Author name created by what, when las modification, is it encrypted or not.
+#       //image can have even store gps coordinates, camera model, photo setting as focal shutter speed ...
+#       //this data is called EXIF data. we can use Exiftool as a tool to extract them.
+
