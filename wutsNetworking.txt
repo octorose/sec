@@ -1,0 +1,102 @@
+# ************************************************What        is      Networking?********************************************
+# ***************************************************************************************************************************
+#                                                                                                                            ##
+#                                                                                                                            ##
+#           Network:
+#           -As i have noted previously a networks are things (machines, computers,...) connected, Networking skills 
+#           will give you the full understading it's like a super power for an penetration tester or red teamer. 
+#
+#                   (this intro may look boring for ppl who knows already about networking)
+#               
+#                   
+#           Internet:
+#           -it's just connection between networks with diff devices printers phones laptops servers routers.
+#              when we say connection this means that the devices communicate between them so they need to know each other,
+#           devices are identifed by two things ip address and Mac address as we humans are identified by our names and 
+#           finger prints names we can change them if we have decided to but our fingerprint i dont think so.
+#
+#
+#           IP address:
+#           -the ip address can be used to identify a host in a network for a period of time(since alot of devices use DHCP
+#           we will cover this dont worry hero).
+#
+#
+#               in case you have never heard about bits, octets i'll give an explanation but it doesn't mean you dont need
+#               to search about it on google.
+#                       -so bits is a numeric unit it can have only one of this two states "0" or "1".
+#                       -everything can be converted to bits from colors to decimals.
+#                       -the value given after a converssion we call it binary.
+#                       -octets is a a sequence of 8 bits.
+#
+#
+#               An ip address is a set of numbers that are devided into four octets it can have decimal values from 000 to
+#               this value can be calculate by a technique called Ip adressing and subnetting.
+#               if it sound too much informations for now all you need to know is that an ip address can change from device 
+#               to device but cannot be simutaneously more than once within the same network
+#           
+#           MAC Addresses
+#
+#        -Devices on a network will all have a physical network interface, which is a microchip board found on the 
+#        device's motherboard. This network interface is assigned a unique address at the factory it was built at, 
+#        called a MAC (Media Access Control ) address. The MAC address is a twelve-character hexadecimal number 
+#        (a base sixteen numbering system used in computing to represent numbers) split into two's and separated
+#        by a colon. These colons are considered separators. For example, a4:c3:f0:85:ac:2d. The first six characters 
+#        represent the company that made the network interface, and the last six is a unique number.
+#
+#
+#
+#
+#          -Ping:(ICMP):
+#
+#          Ping is the most used fundamental network tool available in every OS, it use ICMP (internet controle message protocol)
+#          packets to determine the performance of a connection between devices if it exist,
+#          The time taken for ICMP packets travelling between devices is measured by ping.
+#          so to use ping just write on your terminal "ping Ipaddress or website url" yes even if you have only an url you can 
+#          ping it because we have another protocol DNS who can give name a domain name to every ip address since we humans 
+#          we can remember words better than digits. 
+#
+#
+#
+#           -LAN Topologies:
+#           when we talk about topologies we are talking about the design or the look of the network.
+#
+#               Star topology:
+#                   the main idea about this topology is that every device is connected individualy via a central networking 
+#                   device such as switch or a hub. this topolpgy is the most used nowadays because of it reliabilty and the
+#                   cost 
+#                   Cons:
+#                       since every device is conncete individualy it means that it will need his own equipment such as cables
+#                       and a port to connect with the central networking device
+#                   Pros:
+#                       it is easy to escale the network add or remove devices from the network but dont forget the more the network
+#                       the more it need maintenace also it will make trouble shooting much harder.
+#
+#
+#           -Bus Topology:
+#            this type of connection it use ony one cable that connect between all the devices and it send data to all the machines
+#            not only the dest, this topology give a slow connection since devices can use the cable at the same time, it will also 
+#            give you a hard to for main.
+#            however bus topolgy is the most cost efficient topologies caz we dont have no central Networking device and we use only
+#            one cable to connncet the whole end-points.
+#
+#
+#
+#
+#           -Ring Topology:
+#           also known as token topology there is some similarities as Devices are derictly connected with each other through a loop
+#           meaning that there is a little cabling required but not as much as star topology.
+#           this topolgy works by sending data across the loop until it reaches the device wanted by it IP
+#
+#
+#
+#           What is a Switch?
+#
+#           Switches are dedicated devices within a network that are designed to aggregate multiple other devices such as computers, 
+#           printers, or any other networking-capable device using ethernet. These various devices plug into a switch's port.
+#           Switches are usually found in larger networks such as businesses, schools, or similar-sized networks, where there are
+#           many devices to connect to the network. Switches can connect a large number of devices by having ports of 4, 8, 16, 24,
+#            32, and 64 for devices to plug into.
+#
+#           next ill talk about some protocols and we will get a lil deeper in the osi model
+#
+
