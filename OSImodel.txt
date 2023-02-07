@@ -1,0 +1,69 @@
+# ***********************************************OSI MODEL*******************************************************************************************
+# ***************************************************************************************************************************************************
+#                                                                                                                                                   ##
+#                                                                                                                                                   ##
+#           -What is the osi mode?
+#           Open System Interconncetion model is a fundamental model used in networking, this model will give us an overview                        ##
+#           about how the devices will send, receive and interpret data data sent across a network that follows the                                 ##
+#           the uniformity of an OSI model can be understood by other devices.                                                                      ##
+#           the Osi model consists of seven layers which are : physical, data link, network, transport, session, Presentation                       ##
+#                                                                                                                                                   ##
+#           at every layer that the data travel through, a specific process take place and we add to it a piece of information                      ##
+#           We call this process encapsulation.
+#
+#
+#
+#            -Application layer:
+#            this is the seventh layer that you be most familiar with coz that the layer in which the protocol decide how the                       ##
+#            have to interact with data sent or received. Every application such as email and browsers... they have a friendly                      ##
+#            GUI for user to interact with the data received and sent. use such as Apllication layer protocols as DNS                               ##
+#            
+#            -Session Layer:
+#            the session layer have to beging the creation of the connection with the other computer that the data is destineted##
+#            for . so when a connection is established => a session is created.
+#            the session layer sychronises the connection between the dest and source computers the session leayer will make sure                   ##
+#            both of the computers are in the same page before data sent and received, the Session layer will divide up the data                    ##
+#            sent into small chunks of data & begin to send those chunks(packets).
+#
+#
+#            -Transport Layer:
+#            this layer plays a vital part in transmitting data across a network this layer use one of
+#            these two protocols:
+#               TCP: 
+#               Transmission Control Protocol this protocol is designed with reliability and guarantee in mind.
+#               it needs a constant connection between the two devices for the amount of time it take for the data to be sent.
+#                   -Pros:
+#                   Guarantees the accuracy of data.
+#                   capable of sychronizing two devices to prevent the other from being flooded with data.
+#                   Perform a lot more processes for reliability.
+#                   -Cons:
+#                   a slow connection can Bottlneck another device as the connection will be reserved on the reciving
+#                   computer the whole time
+#
+#
+#                UDP: USer Datagram Protocol, this protocol is not nearly as advaced as the TCP in another words
+#                   UDP is the chad it doesn't give a shit about if u have received the data or not.
+#
+#
+#            -Network Layer:
+#            in this layer we determine the most optimal path that the data have to take we call this process routing                                ##
+#            & also we re-assemble the little chunks made from the Session Layer so if we had a problem of connection
+#            we can only resend the first chunks we have missed and not the whole data, in this layer we will re-assemble
+#            them into a larger chunks,
+#                   Protocols:
+#                   Network layer uses  protocols such as OSPF ( Open shortest Path First )and RIP (Routing information Protocol)                    ##
+#                           OSPF:it a protocole who cares about the fastest or shortest path, it collect link state information from available       ##
+#                       routers and it construct a topology map, it's represented as a table, it can change the topology in case of a link failure   ##
+#                       and it converge on a new loop-free routing structure. this protocole uses Djikstra algorithme to calcualte the shorest path  ##
+#                       when am saying the shortest path so the distance is the cost to reach a router (the cost is inversely proportional to the    ##
+#                       bandwidth of the link ).
+#                           RIP: is a protocole that use litteraly the distance and it's calculated by the number of hops (how many router we have   ## 
+#                       in this Path).
+#                   In this layer everything is dealt with via IP addresses . Devices as routers capableof delivering packets using IP addresses are ##
+#                   are known as Layer 3 devices.
+#            -Data Link:
+#            this layer focuses on the physical addressing when we talk about  physical adressing this means we are going to pull out the word "MAC  ##
+#            adresses", inside every NIC (network interface card) it comes with a unique MAc address. they can be changed but ehm they can be spoofed##
+#            so be carfule.
+#            -physical Layer:
+#            this layer only make reference to the physical components of the hardware used in the networking 
