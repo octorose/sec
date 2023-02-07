@@ -1,0 +1,124 @@
+##**************************************************Frames     and     packets***********************************************##
+##***************************************************************************************************************************##
+##                                                                                                                           ##
+##                  -What is a packet and Frame?                                                                             ##
+##                                                                                                                           ##
+##          a frame is at data link layer (layer 2) this means that there is not such an information as an ip adresses.      ##
+##          Packets are an efficient way of communicating data across networked devices such as those explained in Task 1.   ##
+##          Because this data is exchanged in small pieces, there is less chance of bottlenecking occurring across a         ##
+##          network than large messages being sent at once.                                                                  ##
+##                  -encapsulation:                                                                                          ##
+##          it's a process that every data sent via a network pass through, When data pass from a layer to a lower one       ##
+##          a pieces of information are added to this data.                                                                  ##
+##                                                                                                                           ##
+##          A packet using IP will have a set of headers that contain additional pieces of information he get while being    ##
+##          encapsulating.                                                                                                   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |                                                                                   |   ##
+##         |          HEADER         |                                 Description                                       |   ##
+##         |                         |                                                                                   |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |    this field sets an expiry timer for the packet to not clog up ur network       |   ##
+##         |       Time To live      |                      if it never manages to reach a host or escape!               |   ##
+##         |                         |                                                                                   |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |   This field provides integrity checking for protocols such as TCP/IP.If any data |   ##
+##         |         Checksum        |   is changed, this value will be different from what was expected and therefore   |   ##
+##         |                         |                                  corrupt.                                         |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |   The IP address of the device that the packet is being sent from so that data    |   ##
+##         |      Source address     |                              knows where to return to.                            |   ##
+##         |                         |                                                                                   |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |    The device's IP address the packet is being sent to so that data knows where   |   ##
+##         |     Destination add     |                                  to travel next.                                  |   ##
+##         |                         |                                                                                   |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##         -TCP/IP:                                                                                                          ##
+##          the TCP/IP protocol consists of fours layers it's very similar to OSI model the four layers are:                 ##
+##                  -Application.                                                                                            ##
+##                  -Transport.                                                                                              ##
+##                  -Internet.                                                                                               ##
+##                  -Network interface.                                                                                      ##
+##              TCP is a connection based this means that TCP have to establish connection first before sending data.        ##
+##              this process is called three-way handshake we will discuss shortly this concept.                             ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+## +------------------------+----------------------------------------------------------------------------------------------+ ##
+## | Header                 | Description                                                                                  | ## 
+## +------------------------+----------------------------------------------------------------------------------------------+ ##
+## |       Source Port      |This value is the port opened by the sender to send the TCP packet from.This value is chosen  | ##
+## |                        | randomly (out of the ports from 0-65535 that aren't already in use at the time).             | ##
+## +------------------------+----------------------------------------------------------------------------------------------+ ##
+## |    Destination Port    | This value is the port number that an application or service is running on the remote host   | ##
+## |                        |(the one receiving data); for example, a webserver running on port 80. Unlike the source port,| ##
+## |                        |this value is not chosen at random.                                                           | ## 
+## +------------------------+----------------------------------------------------------------------------------------------+ ##
+## |     Sequence Number    |When a connection occurs, the first piece of data transmitted is given a random number. We'll | ## 
+## |                        |explain this more in-depth further on.                                                        | ##
+## +------------------------+----------------------------------------------------------------------------------------------+ ##
+## | Acknowledgement Number | After a piece of data has been given a sequence number, the number for the next piece of data| ##
+## |                        |will have the sequence number + 1. We'll also explain this more in-depth further on.          | ##
+## +------------------------+----------------------------------------------------------------------------------------------+ ##
+## | Data                   |This header is where the data, i.e. bytes of a file that is being transmitted, is stored.     | ##
+## +------------------------+----------------------------------------------------------------------------------------------+ ##
+## | Flag                   |This header determines how the packet should be handled by either device during the handshake | ##
+## |                        |process. Specific flags will determine specific behaviours.                                   | ## 
+## +------------------------+----------------------------------------------------------------------------------------------+ ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##              -The three-way handshake:                                                                                    ##
+##                  it's the term giving to connection establishement this process uses some specific messages               ##
+##                  1-SYN : its a message sent by the client to sychronize the devices and initialize the connection.        ##
+##                  2-SYN/ACK:it a message sent by the server to Acknowledge the Syn message.                                ##
+##                  3-ACK:this packetcan be sent by either server or client to Acknowledge that a serie of packet have been  ##
+##                       successfully received.                                                                              ##
+##                  4-DATA:after a connection is well established data(it can be anything images, text, ...) is sent via DATA##
+##                  5-FIN:this packet is used to close the connection or the session properly.                               ##
+##                  6-RST:this packet is used to close the connection or the session suddenly and unexpectedly.              ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##             -LET'GO UDP NOW:                                                                                              ##
+##                                                                                                                           ##
+##                  we have already talked about the UDP you can check OSI model file.now we will check on his standard      ##
+##                  headers:                                                                                                 ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |                                                                                   |   ##
+##         |          HEADER         |                                 Description                                       |   ##
+##         |                         |                                                                                   |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |    this field sets an expiry timer for the packet to not clog up ur network       |   ##
+##         |       Time To live      |                      if it never manages to reach a host or escape!               |   ##
+##         |                         |                                                                                   |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |This value is the port that is opened by the sender to send the TCP packet from.   |   ##
+##         |         Source          |This value is chosen randomly (out of the ports from 0-65535 that aren't already   |   ##
+##         |          port           |            in use at the time).                                                   |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |   The IP address of the device that the packet is being sent from so that data    |   ##
+##         |      Source address     |                              knows where to return to.                            |   ##
+##         |                         |                                                                                   |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |This value is the port number that an application or service is running on the     |   ##
+##         |         Destination     |remote host (the one receiving data); for example, a webserver running on port 80. |   ##
+##         |          port           |             Unlike the source port, this value is not chosen at random.           |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         |    The device's IP address the packet is being sent to so that data knows where   |   ##
+##         |     Destination add     |                                  to travel next.                                  |   ##
+##         |                         |                                                                                   |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##         |                         | This header is where the data, i.e. bytes of a file that is being transmitted,    |   ##
+##         |           DATA          |                                      is stored.                                   |   ##
+##         |                         |                                                                                   |   ##
+##          -------------------------------------------------------------------------------------------------------------    ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##***************************************************************************************************************************##
+##***************************************************************************************************************************##
+
