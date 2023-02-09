@@ -1,0 +1,43 @@
+##**************************************************Junior  Security  Analyst ***********************************************##
+##***************************************************************************************************************************##
+##                                                                                                                           ##
+##          as a junior Security analyst you will be monitoring the event logs and alerts, as a 1Tier SOC you will have      ##
+##          some responsabilities as Monitoring and investigating the alerts, Configuring and managing the security tools    ##
+##          Developing and implimenting IDS "Intusion Detection system" signatures, working in SOC groups, create Tickets    ##
+##          & escalate the security incidents to the Tier2 and team leader if needed.                                        ##
+##          UUUUGH     i forgot to note i was diving so deep in  the tools we can use as SOC level1 i am really fascinated   ##
+##          Sorry about this ill try to recapulate my 5h i got in the flow                                                   ##
+##          first we discovered a platform called Feedly that will help us to stay updated since we are th frontliner we     ##
+##          need to know more about strategies and techniques cybercriminals work with                                       ##
+##                                                                                                                           ##
+##          A soc also uses SIEM "security information and event managment" & EDR(Endpoint Detection and Response)           ##
+##          these tools are made for monitoring suspicious and malicious network activities and it prioritize em from Hight  ##
+##          to low level alerts.                                                                                             ##
+##          i got into hashes too hashes are like numerical value that identify data this value have a fixed length by type  ##
+##          of hashing in this room i had the chance to know three of them :                                                 ##
+##              -MD5(Message digest): this method of hashing is wildly used in cryptoghraphic hashing function with 128bits  ##
+##          they are not considered as cryptoghraphically secure, this type of hashing have a collision problem.             ##
+##              -SHA-1 this methode of hashing is banned it was used for digital signatures at the end of 2013 but NIST      ##
+##          found that it was vulnerable to brute forcing.                                                                   ##
+##              -Sha-2 this hashing algo was designed by the NIST to replace the SHA-1 this method have a lot of variants as ##
+##          Sha-256 this algo return a hash with the length of 256bits and 64 hexadecimal number.                            ##
+##          in this room they have montionned some ressources about intrusions , also they gave some online tools to hash    ##
+##          lookup as https://www.virustotal.com/gui/ & https://metadefender.opswat.com/?lang=en.                            ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##          when a soc find out that an IP adresses Send some malicious packets we need  to block, drop, or deny inbound     ##
+##          requests from IP addresses on your parameter or external firewall. but let me tell you this is not a super       ##
+##          to stop an experienced adversary he can simply use a new piblic adress. By a technic named FAST FLUX             ##
+##          -FAST FLUX:                                                                                                      ##
+##              it's a DNS technique used by botnets to hide phishing, web proxy, malware deleveriy. the purpose of using    ##
+##              Fast Flux is to make communication between malwares and its command control server challenging to discovere  ##
+##              by security professionals.                                                                                   ##
+##              so to explain this technic the attacker knows that his IP adress can be shown on the logs and he can be      ##
+##              blocked so why not to  create a script that will change the A records in the dns and also decrease the TTL   ##
+##              so the Ip adress associated to my domain name can change frequently to keep my phishing attack up            ##
+##            typosquatting domain names (Facbook.com) is a technique for physhing .                                         ##
+##                                                                                                                           ##
+##            to preview a link you can append to it a '+' and it will give you the rederiction link                         ##
+##                                                                                                                           ##
+
+
