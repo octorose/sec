@@ -39,5 +39,25 @@
 ##                                                                                                                           ##
 ##            to preview a link you can append to it a '+' and it will give you the rederiction link                         ##
 ##                                                                                                                           ##
+##          -Pyramid of pain:                                                                                                ##
+##              this model will show how to determine the difficulty it will cause to the attacker to change the indicators  ##
+##            *As a first layer of the Pyramid we have Hash values that we talked about so we can indentify a malware if its ##
+##            already known by the tools i have montionned previously .                                                      ##
+##            *Next we have IP adresses the ip adress is used to identify any machine connected to the network pyramid of    ##
+##            pain indicate that its easy for an attacker to deal with u if you already know his IP simply by Fast Fluxing   ##
+##            to get deeper in the Fast Flux technique read this article :https://unit42.paloaltonetworks.com/fast-flux-101/ ##
+##            *Domain name it's simple as mapping an IP adress but it can be a lil more of pain for the attacker as they     ##
+##              would need to purchase the domain, register it and modify the DNS records, Many DNS providers have loose     ##
+##              standares and the provide the customers with API's to make it even easier for the attacker to change the     ##
+##              Domain                                                                                                       ##
+##           *host artificats in this layer the attacker will be more aanoyed and frusrated if you can detect the attack     ##
+##             the attacker will need to circle  back this detection level and change the attack tools and methodology       ##
+##             and it's very time consuming for the attacker. host artificats are the traces or observables the attacker     ##
+##             leave on the system, Such as REGESTRY VALUES, SUSPICOUS PROCESS EXECUTION, ATTACK PATTERNS or IOC's           ##
+##           *network artificats also belong to the yellow zone same as host artificats it means detecting it will give you  ##
+##             more time to response to the upcoming threats. we can detect network artificats by using such tools as        ##
+##             Wirshark, Tshark or snort a network artificat can be a user-agent string, C2 informations, or an URI patterns ##
+##             followed
+
 
 
