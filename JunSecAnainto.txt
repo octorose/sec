@@ -2,7 +2,7 @@
 ##***************************************************************************************************************************##
 ##                                                                                                                           ##
 ##          as a junior Security analyst you will be monitoring the event logs and alerts, as a 1Tier SOC you will have      ##
-##          some responsabilities as Monitoring and investigating the alerts, Configuring and managing the security tools    ##
+##          some responsibilities as Monitoring and investigating the alerts, Configuring and managing the security tools    ##
 ##          Developing and implimenting IDS "Intusion Detection system" signatures, working in SOC groups, create Tickets    ##
 ##          & escalate the security incidents to the Tier2 and team leader if needed.                                        ##
 ##          UUUUGH     i forgot to note i was diving so deep in  the tools we can use as SOC level1 i am really fascinated   ##
@@ -33,7 +33,7 @@
 ##              Fast Flux is to make communication between malwares and its command control server challenging to discovere  ##
 ##              by security professionals.                                                                                   ##
 ##              so to explain this technic the attacker knows that his IP adress can be shown on the logs and he can be      ##
-##              blocked so why not to  create a script that will change the A records in the dns and also decrease the TTL   ##
+##              blocked so why not to  create a script that will change the A records in the DNS and also decrease the TTL   ##
 ##              so the Ip adress associated to my domain name can change frequently to keep my phishing attack up            ##
 ##            typosquatting domain names (Facbook.com) is a technique for physhing .                                         ##
 ##                                                                                                                           ##
@@ -57,7 +57,22 @@
 ##           *network artificats also belong to the yellow zone same as host artificats it means detecting it will give you  ##
 ##             more time to response to the upcoming threats. we can detect network artificats by using such tools as        ##
 ##             Wirshark, Tshark or snort a network artificat can be a user-agent string, C2 informations, or an URI patterns ##
-##             followed
+##             followed                                                                                                      ##
+##           *Tools in this layer we will make thingcs get more complexe for the attacker since we we know what tools he is  ##
+##              working with, so he need to make his own tool 'if he is capable of doing so'.                                ##
+##              Yara rules, Antivirus signatures, detection rules can be a great weapons to use against attackers at this    ##
+##              stage.   we can also use Fuzzy hashing also called as context triggered piecewise hashes.                    ##
+##           *TTPs the last layer of the pyramid of pain and it stands for tactics, techniques & Procedures this includes    ##
+##              the whole Mitre Att&ck Matrix which means all the steps taken by the adversary to reach or achieve his goal  ##
+##              from phishing to persistence and data exfiltration                                                           ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##                     this was an introduction to security analysis, and an explaination of the pyramid of pain             ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##**************************************************Junior  Security  Analyst ***********************************************##
+##***************************************************************************************************************************##
+
 
 
 

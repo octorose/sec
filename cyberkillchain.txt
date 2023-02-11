@@ -1,0 +1,72 @@
+##**************************************************  Cyber    kill    chain  ***********************************************##
+##***************************************************************************************************************************##
+##       the term kill chain is a military concept where it consists of target identification, decision and the order        ##
+##       to attack the target, and at the end the destruction of the target.                                                 ##
+##       Lockheed Martin established the cyber kill chain framework for the cybersecurity industry in 2011 based on the      ##
+##       military concept. this framework identifies the steps that the adversary or an attacker use.So for the success of   ##
+##       an attack, the attacker needs to go through all these steps of the kill chain.In this writeup, ill go through the   ##
+##       attack phases and help you understand adversaries; and technique used in the attacks.                               ##
+##       first the kill chain phases are -Reconnaissance.                                                                    ##
+##                                         -Weaponization.                                                                   ##
+##                                         -Delivery.                                                                        ##
+##                                         -Exploitation.                                                                    ##
+##                                         -Installation.                                                                    ##
+##                                         -Command&control.                                                                 ##
+##                                         -Actions on objectifs.                                                            ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##                  -RECONNAISSANCE: is discovering and collecting as much as possible information about the victim          ##
+##                        and his system.                                                                                    ##
+##                      OSINT (Open Source Intelligence)  it's the first step an attacker needs to complete, he needs to     ##
+##                      collect data as company size, email addresses and phone numbers from the publicly available to       ##
+##                     determine the best target for the attack.                                                             ##
+##                    How Do I conduct an OSINT investigation?                                                               ##
+##                      -there is no data shortage out there on the internet so the first is to start with answering an      ##
+##                      answerable question so you don't get lost in all the noise.As an example "is Agadir safer than       ##
+##                      Casablanca?" VS "have Police reports increased in Agadir since 2015?".The first question call for    ##
+##                      an opinion where the second question only ask about a number.                                        ##
+##                      -the second step is to identify the owner of the best quality data, Primary resources are GOVS       ##
+##                      and corporates, followed by the trade-based organizations or non-gov agencies.                       ##
+##                      there are too many type of data you can get in an investigation such as Usernames, addresses,domain  ##
+##                      images, geolocation ......                                                                           ##
+##                      OSINT can be divided into active and passive techniques with ACTIVE OSINT you can make contact       ##
+##                      with the target,and this will make your Reconnaissance more accurate and up to date but it have a    ##
+##                      higher risk if being detected with active osint u can direct scan using Nmap as an exemple also      ##
+##                      tricking targets into clicking links or reveal more informations. By PASSIVE OSINT you never take    ##
+##                      direct contact with the target, u can relie on third-party hosted information, you can only use      ##
+##                      passive scanning like Shodan or Whois query.                                                         ##
+##                  let get into an attacker mindset, let's say that the attacker doesn't know what company he wants to      ##
+##                  attack.                                                                                                  ##
+##                  so first he need to decide what company to attack, then he need to conduct a OSINT, Email harvesting     ##
+##                  it's the process of obtaining email adresses from public, paid or free services. the attacker can use    ##
+##                  email harvesting for phishing attack. there is alot of harvesting tools such as :                        ##
+##                      -theharvester: this one provide us with other capabilities as names, subdomains, IPS and URLs        ##
+##                      -Hunter.io: this tool will provide you with email of a domain plus where the email have been found   ##
+##                      -OSINT framework: this one provide you with a collection of tools based on various categories        ##
+##                  -WEAPONIZATION: after a successful reconnaissance stage, the attacker would work on the destruction tool ##
+##                      he would prefer to not interact with the victim directly and instead he will create a weaponizer     ##
+##                      according to Lockheed Martin  combines malware and exploit into a deliverable payload. attackers     ##
+##                      usually use automated tools to generate the malware or they refer to the darkweb to purchase the     ##
+##                      malware. More sophisticated actors they would create theire custom malware to make the malware unique##
+##                  -Delivery: this phase is when the attacker choose the method for transmitting the payload  he has alot   ##
+##                      alot of options.                                                                                     ##
+##                          *Phishing email: after reconnaissance the attacker would chose to target a specific              ##
+##                      person or a group of people in the company with a malicious email. This emailwould contain a payload ##
+##                      and with some social engineering as some professional relationships from linkedin as an example and  ##
+##                      he would use the friend First&Last name and making a domain that look similar to the company         ##
+##                      the friend works in.                                                                                 ##
+##                          *Distributing infected USB drives in public places like a coffee shop, parking lots an attacker  ##
+##                              would mail those usb drive with printed logo to employees or a group of targets              ##
+##                          *Watering hole attack, a wattering hole attack is a targeted attack designed to aim a specific   ##
+##                              group of people by compromizing the website they are using and then redirect them to the     ##
+##                              malicious website of an attacker's choice the attacker would unintentionally download malware##
+##                  -EXPLOITATION: to gain access to a system the attacker in this stage get a lil creative and send two     ##
+##                      attacks one  contain a phishing link to a fake 365 office login page and another one that contain a  ##
+##                      macro attachment that would execute a mransomeware when the target opens it. after gainin access a   ##
+##                      malicious actor would exploit the server, software, system to escale the privileges or move laterally##
+##                      lateral movement refer to the technique of getting deeper in the network to gain access into         ##
+##                      machines that contain sensitive data.                                                                ##
+##                      the attacker might also apply a zeroday in this stage 0day exploit or vulnerability is unknown       ##
+##                      exploit in the wild and it can create a complicated problem well before anyone realizes something    ##
+##                      is wrong. a zero day exploit leaves no opportunity for detection at the beginnig                     ##
+##
