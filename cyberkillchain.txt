@@ -69,4 +69,47 @@
 ##                      the attacker might also apply a zeroday in this stage 0day exploit or vulnerability is unknown       ##
 ##                      exploit in the wild and it can create a complicated problem well before anyone realizes something    ##
 ##                      is wrong. a zero day exploit leaves no opportunity for detection at the beginnig                     ##
-##
+##                                                                                                                           ##
+##                  -INSTALLATION: as we have already said the backdoor bypass security measures and hide the access it's    ##
+##                      also known as an access point. Once the attacker gain access to a system he must think about         ##
+##                      installing a persistent backdoor, this one here will let the attacker access the system he           ##
+##                      comprimized in the past.                                                                             ##
+##                      a persistence can be achieved via a                                                                  ##
+##                                      web shell(it's a malicious script written with a web dev PL                          ##
+##                      such as PHP, ASP, JSP ..) used by an attacker to maintain access to the comprimized system.          ##
+##                      because of the webshells simplicity and file formating it's diffcult to detect and might be          ##
+##                      classified as benign.                                                                                ##
+##                                      installing a backdoor on the victim's machine. using METERPRETER as an example       ##
+##                      you can gain a METERPRETER shell by implementing a metsvc backdoor."with metsvc anyone can access    ##
+##                      your backdoor cause it doesn't require an authentication just access the metsvc port so it's not     ##
+##                      safe if you are conduction a penetration test, as this could be significant risk.in real world       ##
+##                      situation it would be better to filter out remote connections to the port ot alter the source to     ##
+##                      require some kind of authentication.                                                                 ##
+##                                      Creating or modifying Windows services this technique is known as T1543.003 on the   ##
+##                      MITRE ATT&CK, an attacker can modify or creat a Windows services to execute some malicious script    ##
+##                      regularly as part of persistence.Using tools as SC.exe'this tool let you creat remove  start         ##
+##                      stop any Windows service' and Reg to modify service configs he can also MASQUERADE the malicious     ##
+##                      payload by using a service name that is known to be related to th OS or legitimate software.         ##
+##                                      Adding to the run keys(tools effect Windows run keys and services to automatically   ##
+##                      startup or load whenever Windows OS is booted. While this service can be a necessary convenience,    ##
+##                      it too can be problematic when accessed by a malicious program.)                                     ##
+##              -Command&Control: after having persistence the attacker need to communicate with the infected machine        ##
+##                      by openning a C2(command&controle) channel to remotely control an manipulate the victim.So the C2    ##
+##                      is the communication between the C&C server and the malware inside the infected machine.IRC was      ##
+##                      traditionally a C2 channel and it's not longer the case since the modern security solutions can      ##
+##                      easily detect malicious IRC traffic. the common C2 channels  used nowadays are:port 80 http or 443   ##
+##                      for https this type of C2 channels bends the malicious traffic with the legitimate traffic and can   ##
+##                      help the attacker to evade the firewalls.                                                            ##
+##                      DNS(Domain name server): the infected machine make constant DNS requests to the dns server that      ##
+##                      belongs to an attacker, this type of communication also known as DNS tunneling.                      ##
+##              -Action on objectifs:now the attacker can achieved his final goal wihich means taking actions of the         ##
+##                      original objectives.                                                                                 ##
+##                                                                                                                           ##
+##       Webshells as entry point for attacks:                                                                               ##
+##              Attackers install web shells on servers by taking advantage of vulnerabilities by scanning the internet      ##
+##              using public scan interfaces as Shodan to locate the servers to target, then they will use vulnerabilities   ##
+##              found in unpatched servers, also they take advantage of newly disclosed vuls.                                ##
+##                                                                                                                           ##
+##                                                                                                                           ##
+##**************************************************  Cyber    kill    chain  ***********************************************##
+##***************************************************************************************************************************##
